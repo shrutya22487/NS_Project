@@ -1,0 +1,32 @@
+nohup: ignoring input
+[Main] Loading graph...
+[Main] Nodes: 325729, Edges: 1117563
+[Embedding] Initializing random features and model...
+[Embedding] Epoch 1/200, loss 1.3251
+[Embedding] Epoch 10/200, loss 1.2211
+[Embedding] Epoch 20/200, loss 1.1223
+[Embedding] Epoch 30/200, loss 1.0380
+[Embedding] Epoch 40/200, loss 0.9877
+[Embedding] Epoch 50/200, loss 0.9604
+[Embedding] Epoch 60/200, loss 0.9490
+[Embedding] Epoch 70/200, loss 0.9428
+[Embedding] Epoch 80/200, loss 0.9407
+[Embedding] Epoch 90/200, loss 0.9388
+[Embedding] Epoch 100/200, loss 0.9381
+[Embedding] Epoch 110/200, loss 0.9379
+[Embedding] Epoch 120/200, loss 0.9371
+[Embedding] Epoch 130/200, loss 0.9374
+[Embedding] Epoch 140/200, loss 0.9364
+[Embedding] Epoch 150/200, loss 0.9351
+[Embedding] Epoch 160/200, loss 0.9356
+[Embedding] Epoch 170/200, loss 0.9359
+[Embedding] Epoch 180/200, loss 0.9348
+[Embedding] Epoch 190/200, loss 0.9348
+[Embedding] Epoch 200/200, loss 0.9353
+[Clustering] Searching for optimal k via silhouette...
+[Clustering] Optimal k: 5
+[KMeans] Running multiple clusterings...
+KMeans runs:   0%|          | 0/5 [00:00<?, ?it/s]KMeans runs:  20%|██        | 1/5 [00:03<00:13,  3.29s/it]KMeans runs:  40%|████      | 2/5 [00:06<00:09,  3.26s/it]KMeans runs:  60%|██████    | 3/5 [00:09<00:06,  3.33s/it]KMeans runs:  80%|████████  | 4/5 [00:13<00:03,  3.40s/it]KMeans runs: 100%|██████████| 5/5 [00:16<00:00,  3.38s/it]KMeans runs: 100%|██████████| 5/5 [00:16<00:00,  3.36s/it]
+[KMeans] Completed runs.
+[Similarity] Computing pairwise similarities...
+Similarity rows:   0%|          | 0/5 [00:00<?, ?it/s]
