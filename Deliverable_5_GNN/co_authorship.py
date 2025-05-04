@@ -118,9 +118,10 @@ G_nx = nx.convert_node_labels_to_integers(nx.read_gml("../data/CA-CondMat.txt", 
 
 data = from_networkx(G_nx)
 data.x = torch.eye(G_nx.number_of_nodes(), dtype=torch.float)
-
+#finding embeddings using GAE
 emb = get_embeddings(data, epochs=200)
 
+# applying KMeans clustering
 scores = {}
 for k in range(2, 4):
     km = KMeans(n_clusters=k, random_state=SEED).fit(emb)
@@ -137,6 +138,7 @@ for i in range(runs):
     if i == 0:
         plot_community_sizes(comms, f"Run {i+1} Community Sizes", f"community_sizes_run{i+1}_co.png", loglog=True)
 
+#finding jaccard and fsame similarity between runs
 jaccard_mat = np.zeros((runs, runs))
 fsame_mat = np.zeros((runs, runs))
 for i in range(runs):

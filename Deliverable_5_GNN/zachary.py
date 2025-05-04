@@ -137,6 +137,7 @@ for i in range(runs):
     if i == 0:
         plot_community_sizes(comms, f"Run {i+1} Community Sizes", f"community_sizes_run{i+1}_zachary.png", loglog=True)
 
+#finding jaccard and fsame similarity between runs
 jaccard_mat = np.zeros((runs, runs))
 fsame_mat = np.zeros((runs, runs))
 for i in range(runs):
